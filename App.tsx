@@ -11,6 +11,7 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import Calculadora from './components/Calculadora';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,9 +29,7 @@ function AppContent() {
 
   return (
     <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
+      <Calculadora
       />
     </View>
   );
